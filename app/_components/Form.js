@@ -1,10 +1,13 @@
-
+'use client'
+import { useState } from "react"; // importa useState para o armazenar mudanças no input
 // cria formulário para cadastrar uma nova task
 export default function Form() {
+    // cria value e setValue com useState
+    const [value, setValue] = useState(''); // inicializa o value como vazio
     // função para lidar com o submit
     function handleSubmit(event) {
-        const { preventDefault, target } = event;
-        preventDefault();
+       event.preventDefault(); // previne comportamento padrão
+       setValue(''); // clear input
     }
     
     return(
@@ -16,6 +19,8 @@ export default function Form() {
                 className="h-12"
             >
                 <input 
+                    value={ value }
+                    onChange={ ({ target }) => setValue(target.value)}
                     placeholder="Type new task"
                     className="border border-red-900 m-1 p-1.5"
                 />
