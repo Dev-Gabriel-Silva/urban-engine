@@ -1,0 +1,33 @@
+{
+  "name": "urban-engine",
+  "version": "1.0.0",
+  "description": "Lista de tarefas simples, tecnologias utilizadas: next.js, local.storage, tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Gabriel-Silva/urban-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Dev-Gabriel-Silva/urban-engine/issues"
+  },
+  "homepage": "https://github.com/Dev-Gabriel-Silva/urban-engine#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "next": "^15.5.4",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.13"
+  }
+}
