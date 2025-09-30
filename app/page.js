@@ -1,11 +1,5 @@
-import Form from "./_components/Form";
+import TaskManager from "./_components/TaskManager";
 
 export default function Home() {
-    return (
-        <div
-            className="h-dvh w-dvw flex flex-col justify-end"
-        >
-            <Form />
-        </div>
-    )
+    return <TaskManager />
 }
