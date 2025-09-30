@@ -21,11 +21,10 @@ export default function Form({ setNewTask }) { // Pega a função setNewTask dos
     
     return(
         <div
-            className="h-2/6 flex justify-center p-12"
+            className="h-2/6 flex justify-center p-5"
         >
             <form
                 onSubmit={ handleSubmit }
-                className="h-12"
             >
                 <input 
                     value={ value }
