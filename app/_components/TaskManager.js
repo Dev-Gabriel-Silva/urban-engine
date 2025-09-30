@@ -25,7 +25,7 @@ export default function TaskManager() {
     }
     return(
         <div 
-            className="h-dvh w-dvw flex flex-col justify-end"
+            className="h-dvh w-dvw flex flex-col items-center justify-center"
         >
             <List tasks={ tasks /* hidrata a list com as tasks*/ } removeTask={ removeTask } /> 
             <Form setNewTask={ setNewTask /* passa a função setNewTask para o formulario poder alterar o estado das tasks */ } /> 

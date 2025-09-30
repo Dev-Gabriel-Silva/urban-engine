@@ -25,15 +25,16 @@ export default function Form({ setNewTask }) { // Pega a função setNewTask dos
         >
             <form
                 onSubmit={ handleSubmit }
+                className="w-4/5"
             >
                 <input 
                     value={ value }
                     onChange={ ({ target }) => setValue(target.value)}
                     placeholder="Type new task"
-                    className="border border-red-900 m-1 p-1.5"
+                    className="border border-red-900 w-4/6 mr-1"
                 />
                 <button
-                    className="border border-red-600 m-1 p-1.5 bg-red-500 text-white"
+                    className="border border-red-600 bg-red-500 text-white"
                     type="submit"
                 >
                     Add task
